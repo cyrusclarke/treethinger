@@ -28,6 +28,11 @@ h1, h2, h3, h4, h5, h6, .navbar {
   	
 }
 
+.navbar-fixed-top {
+  background-color: rgba(97,157,91,0); 
+}
+
+
 .navbar a.navbar-brand {
     font-family: 'chicagobitmap-regular';
   		font-weight: 100;
@@ -42,19 +47,19 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .hero {
-  	/*background-color: rgba(97,157,91,100); */
-  	background: url('oak8bit.jpg') no-repeat center center fixed; 
+  	background-color: rgba(0,0,0,100);
+  	/*background: url('oak8bit.jpg') no-repeat center center fixed; */
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: 50%;
   	background-size: cover;
-  	height: 1000px;
+  	height: 600px;
 
 }
 
 .herotext {
-	    font-family: 'chicagobitmap-regular';
-	background:rgba(0,0,0,0.5);
+	   font-family: 'chicagobitmap-regular';
+	 background:rgba(0,0,0,0.5);
   	color:white;
   	text-align: center;
   	text-shadow: rgba(255,255,255,0.5) 1px 1px;
