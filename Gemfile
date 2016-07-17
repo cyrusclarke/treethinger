@@ -34,6 +34,9 @@ gem 'sprockets', '2.11.0'
 #devise gem
 gem 'devise'
 
+#simple form
+gem 'simple_form'
+
 gem 'rails_12factor', group: :production
 
 group :doc do
