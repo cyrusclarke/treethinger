@@ -5,16 +5,17 @@
 		<h1>START A NEW TREE ADVENTURE</h1>
 		<% @adventures.each do |adventure| %>
 	</div>	
-<!-- 	<div class="nice-box">
-
- --><div class="col-sm-6 col-xs-12">
+ 	<div class="col-sm-6 col-xs-12">
+ 		<div class="nice-box">
  		<br/>
- 		<h2><%= adventure.title %></h2>
+ 		<h2><%= link_to adventure.title, adventure_path(adventure) %></h2>
  		<h3><%= adventure.description%></h3>
  		<h4><%= adventure.points%></h4>
-		<br/>
- 		<%= link_to 'Start Now', '#', class: 'btn btn-primary' %>
+ 	<div class ="col-xs-3 col-xs-offset-9">
+ 		<%= link_to 'Start Now', adventure_path(adventure), class: 'btn btn-primary' %>
+		<br class="clr">
 	</div>
-	<br class="clr" />
+	</div>
+	<br class="clr">
 	<%end%>
 </div>
