@@ -1,0 +1,20 @@
+<br/>
+<br/>
+<br/>
+<div class="container">
+		<h1>START A NEW TREE ADVENTURE</h1>
+		<% @adventures.each do |adventure| %>
+	</div>	
+<!-- 	<div class="nice-box">
+
+ --><div class="col-sm-6 col-xs-12">
+ 		<br/>
+ 		<h2><%= adventure.title %></h2>
+ 		<h3><%= adventure.description%></h3>
+ 		<h4><%= adventure.points%></h4>
+		<br/>
+ 		<%= link_to 'Start Now', '#', class: 'btn btn-primary' %>
+	</div>
+	<br class="clr" />
+	<%end%>
+</div>

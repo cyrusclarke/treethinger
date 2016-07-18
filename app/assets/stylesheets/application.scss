@@ -13,10 +13,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "footer";
+@import "login";
 h1, h2, h3, h4, h5, h6, .navbar {
   margin:0;
 }
 
+h3,h4,h5,h6 {
+    font-family: 'roboto'; 
+    text-transform: capitalize;
+    
+
+}
 
 .navbar {
 	border-radius: 0;
@@ -61,7 +68,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .herotext {
 	   font-family: 'chicagobitmap-regular';
-	 background:rgba(0,0,0,0.5);
+	   background:rgba(0,0,0,0.5);
   	color:white;
   	text-align: center;
   	text-shadow: rgba(255,255,255,0.5) 1px 1px;
@@ -83,4 +90,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .clr {
   clear: both;
 }
+
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+  margin:10px;
+}
+
 
