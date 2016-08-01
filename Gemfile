@@ -34,6 +34,9 @@ gem 'sprockets', '2.11.0'
 #devise gem
 gem 'devise'
 
+#carrierwave
+gem 'carrierwave'
+
 #simple form
 gem 'simple_form'
 

@@ -3,10 +3,31 @@
 <br/>
 <br/>
 <div class="nice-box">
-	<h1 class="text-center col-xs-6">Adventure Name:<b></h1>
-	<h1 class="text-center col-xs-6"><%= @course.title %></h1></b>
-	<h3 class="text-center col-xs-6">Points:<b></h3>
-	<h3 class="text-center col-xs-6"><%= @course.points%></b></h3>
+	<h1 class="text-center col-xs-6">Adventure Name:</h1>
+	<h1 class="text-center col-xs-6"><b><%= @course.title %></h1></b>
+	<%= image_tag @course.image, class: 'img-responsive' %>
+	<br class="clr">
+	<br class="clr">
+	<h3 class="text-center col-xs-6">Points:</h3>
+	<h3 class="text-center col-xs-6"><b><%= @course.points%></b></h3>
+	<br class="clr">
+	<br class="clr">
 	<h3 class="text-center col-xs-6">What is it about?</h3>
 	<h3 class="text-center col-xs-6"><b><%= @course.description%></b></h3>
+	<br class="clr">
+	<br class="clr">
+		<div class ="text-center">
+			<br class="clr">
+			<%= link_to 'add new section', new_admin_course_section_path(@course), class: 'btn btn-primary'%>
+			<%= link_to 'preview your creation', adventure_path(@course), class: 'btn btn-warning'%>
+			<br class="clr">
+		</div>
+	<ul> 
+		<% @course.sections.each do |section| %>
+			<li>
+			 	<%= section.title %>
+			</li>
+		<%end%>
+	</ul>
+<br class="clr">
 </div>
