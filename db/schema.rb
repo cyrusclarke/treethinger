@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20160731193426) do
   create_table "courses", force: true do |t|
     t.string   "title"
     t.text     "description"
-    t.decimal  "points"
+    t.integer  "points"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
