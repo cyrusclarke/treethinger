@@ -2,6 +2,7 @@ Treethinger::Application.routes.draw do
   devise_for :users
   root 'dynamic_pages#index'
   resources :adventures, only: [:index, :show]
+  resources :lessons, only: [:show]
   namespace :admin do
     resources :sections, only: [] do
       resources :lessons, only: [:new, :create]
