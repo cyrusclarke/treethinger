@@ -17,3 +17,5 @@
 
 #public upload
 /public/uploads/
+# Ignore application configuration
+/config/application.yml

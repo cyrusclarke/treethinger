@@ -42,6 +42,10 @@ gem 'simple_form'
 
 gem 'rails_12factor'
 
+gem 'figaro'
+
+gem 'fog'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

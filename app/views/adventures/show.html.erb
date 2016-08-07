@@ -7,6 +7,8 @@
 		<br/>
 		<h3><%= @adventures.description%></h3>
 		<br/>
+		<%= image_tag @adventures.image, class: 'img-responsive' %>
+
  		<h4><span class="label label-success"><%= number_to_human_size @adventures.points%></span></h4>
 	<br/>
 	</div>
