@@ -1,0 +1,84 @@
+errors:
+
+1. HEROKU
+- none of the pages work !
+
+2. git commit -m
+only files that are staged
+
+3. Change the data type of points to integer
+
+
+CURRENT ERROR:
+
+on lessons controller line 3 onwards.
+does not load page when clicking on lesson on a courses page http://localhost:3030/admin/courses/5
+
+
+memoization:
+1. if we've looked up the current_section beforehand use the value that we looked up previously
+2. If we haven't looked up this section before, go into the database, look it up and also make sure to remember the value in case we need to look it up again later --> 
+
+if @current_section == nil
+  @current_section = Section.find(params[:section_id])
+  @current_section
+else
+  @current_section
+end
+
+OR 
+
+@current_section ||= Section.find(params[:section_id])
+
+
+4. To Wrap multiple content into single link
+     <%= link_to lesson_path(lesson) do %>  --> use a for loop that includes the necessary elements
+              <b><%= lesson.title %></b>
+              -
+              <%= lesson.subtitle %>
+            <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+new music
+
+nusrat fateh ali khan
+badbadnotgood
+pinkman
+roly porter
+chris liebling
+gquom oh
+Liberation Technologies label
+https://www.mixcloud.com/HecticEclectic/stretch-armstrong-bobbito-2231995-pt1/
