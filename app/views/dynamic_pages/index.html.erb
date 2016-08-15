@@ -17,19 +17,12 @@
 		</div>
 	<div class="featured-trees col-xs-10 col-xs-offset-1">
 		<br />
-		<div class ="slot1 col-xs-4">
-			<h3>HERE IS A SLOT FOR A TREE</h3>
-			<br>
-			<%= link_to 'Name This Tree', new_admin_course_path, class: 'btn-lg btn-success' %>
-		</div>
-		<div class ="slot1 col-xs-4">
-		<h3>HERE IS A SLOT FOR A TREE</h3>
-		<br>
-		<%= link_to 'Name This Tree', new_admin_course_path, class: 'btn-lg btn-success' %>
-		</div>
-		<div class ="slot1 col-xs-4">
-		<h3>HERE IS A SLOT FOR A TREE</h3>
-		<br>
-		<%= link_to 'Name This Tree', new_admin_course_path, class: 'btn-lg btn-success' %>
-		</div>
+		<% @latest_trees.each do |tree| %>
+			<div class ="slot1 col-xs-4">
+				<h3><%= tree.title %></h3>
+				<%= image_tag tree.image, class: 'img-responsive' %>
+				<br>
+				<%= link_to 'Name This Tree', adventure_path(tree), class: 'btn-lg btn-success' %>
+			</div>
+		<% end %>
 	</div>
