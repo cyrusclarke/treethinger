@@ -1,23 +1,21 @@
 * { box-sizing:border-box; }
 
 /* basic stylings ------------------------------------------ */
+body         { background:url(http://scotch.io/wp-content/uploads/2014/07/61.jpg); }
 .container    { 
-  text-align:center; 
-  font-family:'chicagobitmap-regular';
+  font-family:'Roboto';
+  width:600px; 
   margin:30px auto 0; 
   display:block; 
   background:#FFF;
-  padding-bottom: 20px;
+  padding:10px 50px 50px;
 }
 h2     { 
-  text-align:left;
-  font-family: 'roboto'; 
-  text-transform: uppercase;
+  text-align:center; 
   margin-bottom:50px; 
 }
 h2 small { 
   font-weight:normal; 
-  font-family: 'roboto'; 
   color:#888; 
   display:block; 
 }

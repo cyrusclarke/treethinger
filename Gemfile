@@ -7,7 +7,7 @@ gem 'rails', '4.0.4'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '~> 5.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -49,6 +49,7 @@ gem 'fog'
 gem 'mini_magick', '~> 4.3.1'
 
 gem 'carrierwave-aws'
+
 
 
 group :doc do
