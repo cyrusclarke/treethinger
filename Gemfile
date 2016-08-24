@@ -40,7 +40,7 @@ gem 'carrierwave'
 #simple form
 gem 'simple_form'
 
-gem 'rails_12factor', group: :production
+gem 'rails_12factor'
 
 gem 'figaro'
 
