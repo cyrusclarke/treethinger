@@ -74,16 +74,14 @@ h3,h4,h5,h6 {
   	/*background: url('oak8bit.jpg') no-repeat center center fixed; */ 
     background: image-url("oak8bit.png") no-repeat #000;
     background-attachment: fixed;
-    background-size: 600px;
+    background-size: 50%;
     background-position: center;  
     height: 600px;
-    padding-top: 100px;
-
+    padding-top: 10px;
 }
-
-@media (min-width: 400px) {
-  .hero{background-size: 40%};
-}
+  @media (min-width: 600px) {
+  .hero{background-size: 50%};
+  }
 
 .herotext {
 	  font-family: 'chicagobitmap-regular';
