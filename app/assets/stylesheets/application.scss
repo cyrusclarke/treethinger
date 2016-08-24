@@ -81,8 +81,8 @@ h3,h4,h5,h6 {
 
 }
 
-@media (max-width: 600px) {
-  .hero{background-size: 100%};
+@media (min-width: 400px) {
+  .hero{background-size: 40%};
 }
 
 .herotext {
